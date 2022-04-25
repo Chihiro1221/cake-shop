@@ -1,0 +1,11 @@
+{
+  "name": "cake-shop2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitee.com:Chihiro1221/cake-shop.git",
+  "author": "chihiro <2213595911@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "uview-ui": "^1.8.6"
+  }
+}

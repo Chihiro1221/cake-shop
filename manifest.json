@@ -1,6 +1,6 @@
 {
-    "name" : "cake-shop",
-    "appid" : "__UNI__87B25D8",
+    "name" : "cake-shop2",
+    "appid" : "__UNI__E0C46A1",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -68,5 +68,5 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "3"
+    "vueVersion" : "2"
 }
