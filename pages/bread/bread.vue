@@ -1,6 +1,6 @@
 <template>
   <view class="bread-container flex">
-    <view class="title">蛋糕</view>
+    <view class="title" @click="sendBread">蛋糕</view>
     <view class="">购物车</view>
   </view>
 </template>
@@ -10,7 +10,11 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    sendBread() {
+      uni.$emit('sendBread', { data: '草莓蛋糕' });
+    }
+  }
 };
 </script>
 

@@ -5,7 +5,8 @@
   "pages": [{
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "uni-app",
+        "navigationStyle": "custom"
       }
     },
     {
@@ -35,6 +36,10 @@
         "navigationBarTitleText": "",
         "enablePullDownRefresh": false
       }
+    }, {
+      "path": "pages/detail/detail",
+      "style": {}
+
     }
   ],
   "globalStyle": {

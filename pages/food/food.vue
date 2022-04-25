@@ -11,6 +11,11 @@ export default {
     return {
       msg: 'Hello Vue!'
     };
+  },
+  onLoad() {
+    uni.$on('sendBread', data => {
+      console.log(data);
+    });
   }
 };
 </script>

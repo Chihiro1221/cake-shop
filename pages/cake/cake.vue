@@ -1,6 +1,7 @@
 <template>
   <div class="cake-container">
-    <view v-for="item of 4" :key="item" class="cake-item">
+    <ComponentTest />
+    <view v-for="(item, index) of 4" :key="item" class="cake-item" @tap="gotoDetail(index)">
       <view class="cover"></view>
       <div class="content">
         <view class="text-32">精选月半蕉</view>
@@ -15,11 +16,27 @@
 </template>
 
 <script>
+import ComponentTest from '../../components/component-test.vue';
 export default {
+  components: {
+    ComponentTest
+  },
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    gotoDetail(id) {
+      uni.navigateTo({
+        url: `../detail/detail?id=${id}`
+      });
+    }
+  },
+  onLoad() {
+    console.log(123);
+  },
+  created() {
+    console.log(456);
+  }
 };
 </script>
 
