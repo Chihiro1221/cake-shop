@@ -4,6 +4,9 @@ export default class {
   }
 
   request(url, method = "GET", data) {
+    uni.showLoading({
+      title: '加载中'
+    });
     return new Promise((resolve, reject) => {
       uni.request({
         url: `${this.baseUrl}${url}`,
@@ -18,6 +21,9 @@ export default class {
         },
         fail(err) {
           reject(err)
+        },
+        complete() {
+          setTimeout(() => uni.hideLoading(), 300)
         }
       });
     })

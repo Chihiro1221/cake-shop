@@ -1,5 +1,5 @@
 <template>
-  <view class="cu-bar bg-white">
+  <view class="cu-bar bg-white fixed">
     <view class="action">
       <text class="cuIcon-locationfill text-gray"></text>
       杭州市

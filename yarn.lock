@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-uview-ui@^1.8.6:
-  version "1.8.6"
-  resolved "https://registry.npmmirror.com/uview-ui/-/uview-ui-1.8.6.tgz#1a2e7b508937f37d7c1bfd8b67e6a3e3e73300d0"
-  integrity sha512-R93WU6htCP2Fpw668ABpF7Y8UqIx66pUKGAwBYLDkbnIldyKWkjtfJzqjFm22tF41ty6FVB+82L+gIL775c5LQ==
+uview-ui@^2.0.30:
+  version "2.0.31"
+  resolved "https://registry.npmmirror.com/uview-ui/-/uview-ui-2.0.31.tgz#85679c0ef7ecfde0672d4ef74af813506ea1bcca"
+  integrity sha512-I/0fGuvtiKHH/mBb864SGYk+SJ7WaF32tsBgYgeBOsxlUp+Th+Ac2tgz2cTvsQJl6eZYWsKZ3ixiSXCAcxZ8Sw==

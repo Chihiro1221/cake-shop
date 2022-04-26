@@ -6,6 +6,6 @@
   "author": "chihiro <2213595911@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "uview-ui": "^1.8.6"
+    "uview-ui": "^2.0.30"
   }
 }

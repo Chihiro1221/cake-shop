@@ -7,6 +7,8 @@ import CustomNav from '@/components/custom-nav.vue'
 import HomeTitle from '@/components/home-title.vue'
 import GoodItem from '@/components/good-item.vue'
 import Request from '@/utils/request.js'
+import store from '@/store/index.js'
+
 const baseUrl = 'https://kgjym7q7.lc-cn-n1-shared.com/1.1/'
 uni.$http = new Request({
   baseUrl
@@ -18,7 +20,8 @@ Vue.component('GoodItem', GoodItem)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
-  ...App
+  ...App,
+  store
 })
 app.$mount()
 // #endif

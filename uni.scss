@@ -14,7 +14,7 @@
  */
 @import 'uview-ui/theme.scss';
 @import 'iconfont/index.scss'; /* 颜色变量 */
-@for $i from 1 through 32 {
+@for $i from 1 through 34 {
   .text-#{$i} {
     font-size: (1upx * $i);
   }
