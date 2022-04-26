@@ -6,6 +6,11 @@ import uView from "uview-ui";
 import CustomNav from '@/components/custom-nav.vue'
 import HomeTitle from '@/components/home-title.vue'
 import GoodItem from '@/components/good-item.vue'
+import Request from '@/utils/request.js'
+const baseUrl = 'https://kgjym7q7.lc-cn-n1-shared.com/1.1/'
+uni.$http = new Request({
+  baseUrl
+})
 Vue.use(uView);
 Vue.component('CustomNav', CustomNav)
 Vue.component('HomeTitle', HomeTitle)

@@ -15,9 +15,9 @@
         :duration="1000"
         indicator-active-color="#f5e67b"
       >
-        <swiper-item v-for="item of 2" :key="item">
+        <swiper-item v-for="item of banner" :key="item.objectId" @tap="gotoBannerDetail(item.link)">
           <view class="swiper-item">
-            <image class="banner" src="../../static/images/swiper1.jpeg" mode=""></image>
+            <image class="banner" :src="item.picture" mode=""></image>
           </view>
         </swiper-item>
       </swiper>
@@ -46,11 +46,18 @@ export default {
   data() {
     return {
       isShow: false,
-      scrollTop: 0
+      scrollTop: 0,
+      banner: []
     };
   },
-  onLoad() {},
+  async onLoad() {
+    this.loadBanner();
+  },
   methods: {
+    async loadBanner() {
+      const { results } = await uni.$http.get('classes/banner');
+      this.banner = results;
+    },
     handleScroll({ detail }) {
       const { scrollTop } = detail;
       this.isShow = scrollTop > 500;
@@ -58,6 +65,11 @@ export default {
     },
     backTop() {
       this.scrollTop = 0;
+    },
+    gotoBannerDetail(link) {
+      uni.navigateTo({
+        url: `./banner-detail?link=${link}`
+      });
     }
   }
 };

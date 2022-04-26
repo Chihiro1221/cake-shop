@@ -10,6 +10,13 @@
       }
     },
     {
+      "path": "pages/index/banner-detail",
+      "style": {
+        "navigationBarTitleText": "uni-app",
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/cake/cake",
       "style": {
         "navigationBarTitleText": "",
@@ -41,7 +48,14 @@
       "style": {}
 
     }
-  ],
+      ,{
+            "path" : "pages/collect-data/collect-data",
+            "style" :                                                                                    
+            {
+            }
+            
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
